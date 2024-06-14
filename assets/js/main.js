@@ -14,5 +14,11 @@ $(document).ready(function(){
     });
     $(".item").click(function(){
         $(this).find(".checkmark").toggle();
+        setTimeout(function(){
+            window.location.href = 'rental-item-search-results.html';
+        }, 1000);
+    });
+    $(".filter-item-checkbox").click(function(){
+        $(this).find(".checked").toggle();
     });
 });

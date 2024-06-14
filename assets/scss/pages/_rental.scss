@@ -7,6 +7,7 @@
     top: 0;
     z-index: 999999;
     background: $white;
+
     header {
         .navbar {
             display: flex;
@@ -82,6 +83,10 @@
                     font-family: $inter;
                     font-weight: 400;
                     border-radius: 6px;
+                    transition: .3s ease;
+                    &:hover{
+                        background: #17053b;
+                    }
                 }
 
                 .togglebar {
@@ -110,23 +115,28 @@
         }
     }
 }
-.rental-item-wrapper{
+
+.rental-item-wrapper {
     padding-bottom: 40px;
-    .rental-item-main-area{
+
+    .rental-item-main-area {
         background: $simplegray;
         padding: 0 25px 40px 25px;
-        .rental-item-header{
+
+        .rental-item-header {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 40px 0;
-            h1{
+
+            h1 {
                 font-family: $toran;
                 font-size: 35px;
                 font-weight: 400;
                 text-transform: capitalize;
                 display: inline-block;
                 position: relative;
+
                 &::after {
                     content: '';
                     height: 1px;
@@ -135,20 +145,22 @@
                     bottom: -5px;
                     left: 0;
                     position: absolute;
-        
+
                 }
             }
         }
-        .rental-item-sub-header{
+
+        .rental-item-sub-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             column-gap: 40px;
             flex-wrap: wrap;
             row-gap: 30px;
-            
-            .left{
-                h1{
+            padding-bottom: 32px;
+
+            .left {
+                h1 {
                     font-family: $roboto;
                     font-size: 26px;
                     font-weight: 600;
@@ -156,6 +168,7 @@
                     color: $maincolor;
                     position: relative;
                     display: inline-block;
+
                     &::after {
                         content: '';
                         height: 2px;
@@ -164,33 +177,38 @@
                         bottom: -5px;
                         left: 0;
                         position: absolute;
-            
+
                     }
                 }
-                h2{
+
+                h2 {
                     font-family: $roboto;
                     font-size: 26px;
                     font-weight: 600;
                     line-height: 31px;
                     color: $maincolor;
                 }
-                
+
             }
-            .right{
+
+            .right {
                 max-width: 431px;
                 width: 100%;
                 position: relative;
-                input{
+
+                input {
                     width: 100%;
                     border: 1px solid #C5C5C5;
                     color: $black;
                     padding: 10px 7px 10px 68px;
                     font-size: 16px;
-                    &:focus{
+
+                    &:focus {
                         outline: 2px solid $maincolor;
                     }
                 }
-                .searchicon{
+
+                .searchicon {
                     color: #C5C5C5;
                     font-size: 20px;
                     position: absolute;
@@ -198,32 +216,40 @@
                     transform: translateY(-50%);
                     left: 20px;
                 }
-                p{
-                   color: #7D7D7D;
-                   font-size: 14px;
-                   font-family: $roboto;
-                   line-height: 17; 
-                   text-align: right;
+
+                p {
+                    color: #7D7D7D;
+                    font-size: 14px;
+                    font-family: $roboto;
+                    line-height: 17px;
+                    text-align: right;
                 }
             }
         }
-        .filter-area{
+
+        .filter-area {
             background: $white;
-            padding: 20px 10px 20px;
-            .search-area{
+            padding: 20px 10px 20px 15px;
+            margin-right: 20px;
+            
+
+            .search-area {
                 width: 100%;
                 position: relative;
-                input{
+
+                input {
                     width: 100%;
                     border: 1px solid #C5C5C5;
                     color: $black;
                     padding: 10px 7px 10px 68px;
                     font-size: 16px;
-                    &:focus{
+
+                    &:focus {
                         outline: 2px solid $maincolor;
                     }
                 }
-                .searchicon{
+
+                .searchicon {
                     color: #C5C5C5;
                     font-size: 20px;
                     position: absolute;
@@ -231,22 +257,128 @@
                     transform: translateY(-50%);
                     left: 20px;
                 }
-              
+
+            }
+
+            .filter-item {
+                .filter-item-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 24px;
+                    padding-right: 20px;
+
+                    h1 {
+                        font-family: $roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 31px;
+                        color: $maincolor;
+                        position: relative;
+                        display: inline-block;
+
+                        &::after {
+                            content: '';
+                            height: 2px;
+                            width: 50%;
+                            background: $maincolor;
+                            bottom: -3px;
+                            left: 0;
+                            position: absolute;
+
+                        }
+                    }
+
+                    button {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                ul{
+                    margin-top: 20px;
+                    padding-right: 10px;
+                    li{
+                        font-family: $roboto;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: $black;
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+                        span{
+                            border: 1px solid #969696 ;
+                            height: 13px;
+                            width: 13px;
+                            display: block;
+                            float: left;
+                            margin-right: 10px;
+                            padding-left: 1px;
+                            .checked{
+                                font-size: 10px;
+                                margin-bottom: 1px;
+                                display: none;
+                            }
+                        }
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 0;
+                            li{
+                                font-family: $roboto;
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: $black;
+                                margin-bottom: 0;
+                                text-transform: capitalize;
+                                &:last-child{
+                                    color: #8F8F8F;
+                                   
+                                }
+                                span{
+                                    display: block;
+                                    height: 24px;
+                                    width: 24px;
+                                    border-radius: 50%;
+                                    background:#FFC635 ;
+                                    float: left;
+                                    margin-right: 10px;
+                                    margin-top: -6px;
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            ul{
+                                li{
+                                    span{
+                                        background: #65E139;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .filter-item-checkbox{
+                        cursor: pointer;
+                    }
+                }
+
             }
         }
-        .rental-category{
+
+        .rental-category {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             row-gap: 40px;
-            padding: 25px 0;
-            .item{
+            padding: 0 0 25px 0;
+
+            .item {
                 width: 30%;
                 height: 200px;
                 position: relative;
                 cursor: pointer;
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -255,37 +387,83 @@
                     top: 0;
                     left: 0;
                 }
-                .item-name{
+
+                .item-name {
                     position: absolute;
                     bottom: 22px;
                     left: 27px;
                     z-index: 1;
-                   
-                    h1{
+
+                    h1 {
                         font-family: $roboto;
                         font-size: 27px;
                         color: $white;
                         font-weight: 400;
                         text-transform: capitalize;
-                        .checkmark{
+
+                        .checkmark {
                             display: none;
                         }
                     }
                 }
             }
+            .search-results-item{
+                width: 32%;
+                .images{
+                    height: 172px;
+                    width: 100%;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                h2{
+                    font-size: 19px;
+                    font-family: $roboto;
+                    color: $black;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    margin-top: 10px;
+                }
+                button{
+                    color: $maincolor;
+                    font-size: 12px;
+                    font-family: $roboto;
+                    font-weight: 400;
+                    border: 1px solid $maincolor;
+                    padding: 3px 7px;
+                    border-radius: 3px;
+                    margin-top: 10px;
+                    transition: .3s ease;
+                    &:hover{
+                        background: $maincolor;
+                        color: $white;
+                    }
+                }
+                
+            }
         }
-        .showmorebutton{
+
+        .showmorebutton {
             display: flex;
             justify-content: center;
             align-items: center;
-            button{
+
+            button {
                 font-size: 21px;
                 font-family: $toran;
                 font-weight: 400;
                 text-transform: capitalize;
                 color: $maincolor;
                 position: relative;
-                &::after{
+
+                &::after {
                     content: ' ';
                     height: 1px;
                     width: 30px;
@@ -295,7 +473,8 @@
                     top: 50%;
                     transform: translateY(-50%);
                 }
-                &::before{
+
+                &::before {
                     content: ' ';
                     height: 1px;
                     width: 30px;
@@ -308,7 +487,7 @@
             }
         }
     }
-    
+
 }
 
 @media screen and (max-width:992px) {
@@ -352,44 +531,91 @@
             }
         }
     }
-    .rental-item-wrapper{
-        .rental-item-main-area{
-            .rental-category{
-                .item{
+
+    .rental-item-wrapper {
+        .rental-item-main-area {
+            .rental-category {
+                .item {
+                    width: 47%;
+                }
+                .search-results-item {
                     width: 47%;
                 }
             }
         }
     }
 }
+
 @media screen and (max-width: 768px) {
-    .rental-item-wrapper{
-        .rental-item-main-area{
-            .rental-category{
-                .item{
-                    .item-name{
-                        h1{
+    .rental-item-wrapper {
+        .rental-item-main-area {
+            .rental-item-sub-header{
+                .numberofitem{
+                    width: 50% !important;
+                }
+            }
+            .rental-category {
+                .item {
+                    .item-name {
+                        h1 {
                             font-size: 16px;
                         }
                     }
+                }
+                .search-results-item {
+                    width: 100%;
                 }
             }
         }
     }
 }
+
 @media screen and (max-width: 576px) {
-    .rental-item-wrapper{
-        .rental-item-main-area{
-            .rental-category{
-                .item{
-                    width: 100%;
-                    .item-name{
-                        h1{
-                            font-size: 25px;
-                        }
+    .rental-item-wrapper {
+        .rental-item-main-area {
+          
+            .filter-area{
+                margin-right: 0;
+                .search-area{
+                    input{
+                        padding-left: 30px;
+                    }
+                    .searchicon{
+                        left: 5px;
                     }
                 }
             }
+            .rental-category {
+                .item {
+                    width: 100%;
+
+                    .item-name {
+                        h1 {
+                            font-size: 25px;
+                        }
+                    }
+
+                }
+
+            }
+
         }
+    }
+}
+@media screen and (max-width: 440px){
+    .rental-item-wrapper {
+        .rental-item-main-area {
+            .rental-item-sub-header{
+                column-gap: 10px;
+            }
+            
+        }
+    }
+    .custom-col{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+    .m-t{
+        margin-top: 20px !important;
     }
 }
