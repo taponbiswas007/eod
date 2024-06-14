@@ -44,6 +44,54 @@ $(document).ready(function(){
     $('.anglearrow').click(function() {
         $('.select-item-area').toggle();
     });
+
+    var maxCount = 12;
+
+    // Increase button click event
+    $('.counter .increase').click(function() {
+        var $counter = $(this).closest('.counter');
+        var $countElement = $counter.find('.count');
+        var count = parseInt($countElement.text());
+        if (count < maxCount) {
+            $countElement.text(count + 1);
+        }
+    });
+
+    // Decrease button click event
+    $('.counter .decrease').click(function() {
+        var $counter = $(this).closest('.counter');
+        var $countElement = $counter.find('.count');
+        var count = parseInt($countElement.text());
+        if (count > 0) {  // Optional: prevent negative counts
+            $countElement.text(count - 1);
+        }
+    });
+    var maxCountminute = 60;
+
+    // Increase button click event
+    $('.counter2 .increase2').click(function() {
+        var $counter = $(this).closest('.counter2');
+        var $countElement = $counter.find('.count2');
+        var count = parseInt($countElement.text());
+        if (count < maxCountminute) {
+            $countElement.text(count + 1);
+        }
+    });
+
+    // Decrease button click event
+    $('.counter2 .decrease2').click(function() {
+        var $counter = $(this).closest('.counter2');
+        var $countElement = $counter.find('.count2');
+        var count = parseInt($countElement.text());
+        if (count > 0) {  // Optional: prevent negative counts
+            $countElement.text(count - 1);
+        }
+    });
+
+    $('.time-toggle').click(function() {
+        var currentText = $(this).text();
+        $(this).text(currentText === 'am' ? 'pm' : 'am');
+      });
    
 });
 function formatDate(dateString) {

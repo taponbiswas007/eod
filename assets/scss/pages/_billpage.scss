@@ -145,6 +145,7 @@
                 font-weight: 600;
                 color: $maincolor;
                 line-height: 31px;
+                margin-top: 40px;
             }
         }
         .eventtimetable{
@@ -176,6 +177,7 @@
                     ul{
                         li{
                            margin-bottom: 4px;
+                           cursor: pointer;
                            &:last-child{
                             margin-bottom: 0;
                         }
@@ -183,6 +185,9 @@
                             margin-left: -3px;
                         }
                         }
+                    }
+                    span{
+                        cursor: pointer;
                     }
                    
                 }

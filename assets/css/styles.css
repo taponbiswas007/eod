@@ -762,6 +762,7 @@ img {
   font-weight: 600;
   color: #3B236D;
   line-height: 31px;
+  margin-top: 40px;
 }
 .bill-wrapper .bill-area .eventtimetable {
   display: -webkit-box;
@@ -806,12 +807,16 @@ img {
 }
 .bill-wrapper .bill-area .eventtimetable .itemtableitem .settime ul li {
   margin-bottom: 4px;
+  cursor: pointer;
 }
 .bill-wrapper .bill-area .eventtimetable .itemtableitem .settime ul li:last-child {
   margin-bottom: 0;
 }
 .bill-wrapper .bill-area .eventtimetable .itemtableitem .settime ul li:nth-child(2) {
   margin-left: -3px;
+}
+.bill-wrapper .bill-area .eventtimetable .itemtableitem .settime span {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
