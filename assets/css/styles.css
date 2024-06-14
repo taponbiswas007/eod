@@ -881,6 +881,7 @@ img {
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-names {
   width: 100%;
+  position: relative;
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name {
   background: #ffffff;
@@ -897,6 +898,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name h1 {
   font-family: "Arial";
@@ -906,6 +908,30 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name button {
+  color: #667085;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name .select-item-name {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name .select-item-name ul li {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity-header {
   width: 46px;

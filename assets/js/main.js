@@ -103,7 +103,19 @@ $(document).ready(function(){
             categoryName.css("color", "#3B236D");
         }
     });
+
     
+       // Toggle .select-item-name visibility on .bill-item-name click
+       $('.bill-item-name').on('click', function() {
+        $(this).find('.select-item-name').toggle();
+    });
+
+    // Update h1 text and hide .select-item-name on li click
+    $('.select-item-name li').on('click', function() {
+        var newItem = $(this).text().trim(); // Get the text of the clicked li
+        $(this).closest('.bill-item-name').find('h1').text(newItem); // Update h1 text
+        $(this)('.select-item-name').hide(); // Hide the .select-item-name container
+    });
 });
 function formatDate(dateString) {
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

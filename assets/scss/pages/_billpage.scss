@@ -246,6 +246,7 @@
                     column-gap: 10px;
                     .bill-item-names{
                         width: 100%;
+                        position: relative;
                     }
                     .bill-item-name{
                         background: $white;
@@ -256,6 +257,7 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        position: relative;
                         
                         h1{
                             font-family: $arial;
@@ -266,6 +268,31 @@
                             margin-top: 0;
                             margin-bottom: 0;
                            
+                        }
+                        button{
+                            color: #667085;
+                        }
+                        .select-item-name{
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            display: none;
+                            background: $white;
+                            padding: 20px;
+                            border-radius: 8px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            z-index: 1;
+                            ul{
+                                li{
+                                    font-family: $inter;
+                                    color: $black;
+                                    font-size: 16px;
+                                    margin-bottom: 10px;
+                                    text-transform: capitalize;
+                                    cursor: pointer;
+                                }
+                            }
                         }
                     }
                     .bill-item-quantity-header{
