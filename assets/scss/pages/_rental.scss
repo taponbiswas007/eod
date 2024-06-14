@@ -167,6 +167,14 @@
             
                     }
                 }
+                h2{
+                    font-family: $roboto;
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 31px;
+                    color: $maincolor;
+                }
+                
             }
             .right{
                 max-width: 431px;
@@ -190,6 +198,40 @@
                     transform: translateY(-50%);
                     left: 20px;
                 }
+                p{
+                   color: #7D7D7D;
+                   font-size: 14px;
+                   font-family: $roboto;
+                   line-height: 17; 
+                   text-align: right;
+                }
+            }
+        }
+        .filter-area{
+            background: $white;
+            padding: 20px 10px 20px;
+            .search-area{
+                width: 100%;
+                position: relative;
+                input{
+                    width: 100%;
+                    border: 1px solid #C5C5C5;
+                    color: $black;
+                    padding: 10px 7px 10px 68px;
+                    font-size: 16px;
+                    &:focus{
+                        outline: 2px solid $maincolor;
+                    }
+                }
+                .searchicon{
+                    color: #C5C5C5;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 20px;
+                }
+              
             }
         }
         .rental-category{
