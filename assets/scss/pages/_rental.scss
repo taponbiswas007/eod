@@ -1,2 +1,312 @@
 @import'../utils/mixins';
 @import'../utils/variables';
+
+.header-wrapper {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    background: $white;
+    header {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                height: 66px;
+                width: 67px;
+
+                a {
+                    display: block;
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: flex-end;
+                column-gap: 40px;
+                align-items: center;
+
+                nav {
+                    ul {
+                        li {
+                            display: inline-block;
+                            margin-right: 40px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+
+                            a {
+                                font-size: 16px;
+                                color: $maincolor;
+                                font-family: $inter;
+                                font-weight: 400;
+                                text-transform: capitalize;
+                                position: relative;
+                                transition: .3s ease;
+
+                                &:hover::after {
+                                    content: '';
+                                    height: 1px;
+                                    background: $maincolor;
+                                    bottom: -5px;
+                                    left: 0;
+                                    right: 30%;
+                                    position: absolute;
+                                }
+                            }
+
+                            .active {
+                                &::after {
+                                    content: '';
+                                    height: 1px;
+                                    background: $maincolor;
+                                    bottom: -5px;
+                                    left: 0;
+                                    right: 30%;
+                                    position: absolute;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    background: $maincolor;
+                    padding: 10px;
+                    font-size: 16px;
+                    color: $white;
+                    font-family: $inter;
+                    font-weight: 400;
+                    border-radius: 6px;
+                }
+
+                .togglebar {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.hero-wrapper {
+    .hero-area {
+        height: 348px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+.rental-item-wrapper{
+    .rental-item-main-area{
+        background: $simplegray;
+        padding: 0 25px 40px 25px;
+        .rental-item-header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+            h1{
+                font-family: $toran;
+                font-size: 35px;
+                font-weight: 400;
+                text-transform: capitalize;
+                display: inline-block;
+                position: relative;
+                &::after {
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background: $maincolor;
+                    bottom: -5px;
+                    left: 0;
+                    position: absolute;
+        
+                }
+            }
+        }
+        .rental-item-sub-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 40px;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            
+            .left{
+                h1{
+                    font-family: $roboto;
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 31px;
+                    color: $maincolor;
+                    position: relative;
+                    display: inline-block;
+                    &::after {
+                        content: '';
+                        height: 2px;
+                        width: 100%;
+                        background: $maincolor;
+                        bottom: -5px;
+                        left: 0;
+                        position: absolute;
+            
+                    }
+                }
+            }
+            .right{
+                max-width: 431px;
+                width: 100%;
+                position: relative;
+                input{
+                    width: 100%;
+                    border: 1px solid #C5C5C5;
+                    color: #C5C5C5;
+                    padding: 10px 7px 10px 68px;
+                    &:focus{
+                        outline: 2px solid $maincolor;
+                    }
+                }
+                .searchicon{
+                    color: #C5C5C5;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 20px;
+                }
+            }
+        }
+        .rental-category{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            padding: 25px 0;
+            .item{
+                width: 308px;
+                height: 173px;
+                position: relative;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .item-name{
+                    position: absolute;
+                    bottom: 22px;
+                    left: 27px;
+                    z-index: 1;
+                   
+                    h1{
+                        font-family: $roboto;
+                        font-size: 27px;
+                        color: $white;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        .checkmark{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .showmorebutton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                font-size: 21px;
+                font-family: $toran;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: $maincolor;
+                position: relative;
+                &::after{
+                    content: ' ';
+                    height: 1px;
+                    width: 30px;
+                    background: $maincolor;
+                    position: absolute;
+                    left: -40px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &::before{
+                    content: ' ';
+                    height: 1px;
+                    width: 30px;
+                    background: $maincolor;
+                    position: absolute;
+                    right: -40px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+    .header-wrapper {
+
+        header {
+            position: relative;
+
+            .navbar {
+                .right {
+                    nav {
+                        background: $white;
+                        position: absolute;
+                        top: 100%;
+                        left: -200%;
+                        padding: 40px 50px;
+                        z-index: 99999;
+
+                        ul {
+                            li {
+                                display: block;
+                                margin-bottom: 20px;
+
+                            }
+                        }
+                    }
+
+                    .togglebar {
+                        display: block;
+                        font-size: 26px;
+                        color: $maincolor;
+                        font-weight: 900;
+                        cursor: pointer;
+                        width: 30px;
+
+                        .close {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
