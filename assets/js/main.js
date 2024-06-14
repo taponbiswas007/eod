@@ -93,6 +93,17 @@ $(document).ready(function(){
         $(this).text(currentText === 'am' ? 'pm' : 'am');
       });
    
+
+      $(".category-items").click(function(){
+        $(this).find(".checkthisitem").toggle();
+        var categoryName = $(this).find(".category-name");
+        if (categoryName.css("color") === "rgb(59, 35, 109)") {
+            categoryName.css("color", "#424242");
+        } else {
+            categoryName.css("color", "#3B236D");
+        }
+    });
+    
 });
 function formatDate(dateString) {
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

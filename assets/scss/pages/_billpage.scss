@@ -147,6 +147,40 @@
                 line-height: 31px;
                 margin-top: 40px;
             }
+            .category-select-item{
+                margin-top: 30px;
+                border: 2px solid #D5D5D5;
+                padding: 20px 10px;
+                h1{
+                    font-family: $roboto;
+                    color: #424242;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    margin-top: 0;
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                }
+                .category-items{
+                    background: $white;
+                    height: 30px;
+                    padding-left: 30px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    h1{
+                        font-family: $arial;
+                        font-size: 12px;
+                        color: #424242;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        .checkthisitem{
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
         .eventtimetable{
             display: flex;
@@ -192,6 +226,83 @@
                    
                 }
             }
+        }
+        .main-bill{
+            margin-top: 30px;
+                border: 2px solid #D5D5D5;
+                padding: 20px 10px;
+                h1{
+                    font-family: $roboto;
+                    color: #424242;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 14px; 
+                    margin-bottom: 30px;
+                }
+                .bill-item-and-quantity-selector{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 10px;
+                    .bill-item-names{
+                        width: 100%;
+                    }
+                    .bill-item-name{
+                        background: $white;
+                        height: 30px;
+                        padding-left: 10px;
+                        cursor: pointer;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        h1{
+                            font-family: $arial;
+                            font-size: 12px;
+                            color: #424242;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                           
+                        }
+                    }
+                    .bill-item-quantity-header{
+                        width: 46px;
+                       
+                        height: 30px;
+                        span{
+                            color: #424242;
+                            font-family: $roboto;
+                            font-size: 13px;
+                            font-style: italic;
+                        }
+                    }
+                    .hair-days-header{
+                        width: 46px;
+                      
+                        height: 30px;
+                        span{
+                            color: #424242;
+                            font-family: $roboto;
+                            font-size: 13px;
+                            font-style: italic;
+                        }
+                    }
+                    .bill-item-quantity{
+                        width: 46px;
+                        background: $white;
+                        height: 30px;
+                     
+                    }
+                    .hair-days{
+                        width: 46px;
+                        background: $white;
+                        height: 30px;
+                        
+                    }
+                }
         }
     }
 

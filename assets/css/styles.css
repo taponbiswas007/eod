@@ -764,6 +764,40 @@ img {
   line-height: 31px;
   margin-top: 40px;
 }
+.bill-wrapper .bill-area .allcategoryarea .category-select-item {
+  margin-top: 30px;
+  border: 2px solid #D5D5D5;
+  padding: 20px 10px;
+}
+.bill-wrapper .bill-area .allcategoryarea .category-select-item h1 {
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 0;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.bill-wrapper .bill-area .allcategoryarea .category-select-item .category-items {
+  background: #ffffff;
+  height: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.bill-wrapper .bill-area .allcategoryarea .category-select-item .category-items h1 {
+  font-family: "Arial";
+  font-size: 12px;
+  color: #424242;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bill-wrapper .bill-area .allcategoryarea .category-select-item .category-items h1 .checkthisitem {
+  display: none;
+}
 .bill-wrapper .bill-area .eventtimetable {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -817,6 +851,91 @@ img {
 }
 .bill-wrapper .bill-area .eventtimetable .itemtableitem .settime span {
   cursor: pointer;
+}
+.bill-wrapper .bill-area .main-bill {
+  margin-top: 30px;
+  border: 2px solid #D5D5D5;
+  padding: 20px 10px;
+}
+.bill-wrapper .bill-area .main-bill h1 {
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-names {
+  width: 100%;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name {
+  background: #ffffff;
+  height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name h1 {
+  font-family: "Arial";
+  font-size: 12px;
+  color: #424242;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity-header {
+  width: 46px;
+  height: 30px;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity-header span {
+  color: #424242;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days-header {
+  width: 46px;
+  height: 30px;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days-header span {
+  color: #424242;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity {
+  width: 46px;
+  background: #ffffff;
+  height: 30px;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days {
+  width: 46px;
+  background: #ffffff;
+  height: 30px;
 }
 
 @media screen and (max-width: 992px) {
