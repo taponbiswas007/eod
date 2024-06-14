@@ -111,6 +111,7 @@
     }
 }
 .rental-item-wrapper{
+    padding-bottom: 40px;
     .rental-item-main-area{
         background: $simplegray;
         padding: 0 25px 40px 25px;
@@ -174,8 +175,9 @@
                 input{
                     width: 100%;
                     border: 1px solid #C5C5C5;
-                    color: #C5C5C5;
+                    color: $black;
                     padding: 10px 7px 10px 68px;
+                    font-size: 16px;
                     &:focus{
                         outline: 2px solid $maincolor;
                     }
@@ -195,12 +197,11 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            column-gap: 30px;
-            row-gap: 30px;
+            row-gap: 40px;
             padding: 25px 0;
             .item{
-                width: 308px;
-                height: 173px;
+                width: 30%;
+                height: 200px;
                 position: relative;
                 cursor: pointer;
                 img{
@@ -303,6 +304,46 @@
 
                         .close {
                             display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rental-item-wrapper{
+        .rental-item-main-area{
+            .rental-category{
+                .item{
+                    width: 47%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .rental-item-wrapper{
+        .rental-item-main-area{
+            .rental-category{
+                .item{
+                    .item-name{
+                        h1{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .rental-item-wrapper{
+        .rental-item-main-area{
+            .rental-category{
+                .item{
+                    width: 100%;
+                    .item-name{
+                        h1{
+                            font-size: 25px;
                         }
                     }
                 }
