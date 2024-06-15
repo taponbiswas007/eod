@@ -1546,6 +1546,7 @@ img {
   width: 100%;
   padding: 15px;
   border-radius: 8px;
+  display: none;
 }
 .checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details h4 {
   font-family: "Inter", sans-serif;
@@ -1554,7 +1555,7 @@ img {
   font-weight: 400;
   margin-bottom: 10px;
 }
-.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details .card-item {
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details .card-item label {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #1b1b1b;
@@ -1573,7 +1574,46 @@ img {
   border: 1px solid #b4b4b4;
   width: 100%;
   border-radius: 8px;
+  margin-bottom: 10px;
 }
-.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details .card-item img {
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details .card-item label img {
   width: 34px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .addmorecards {
+  margin-top: 20px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .addmorecards button {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #1b1b1b;
+  font-weight: 400;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .addmorecards button .plusicon {
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #408BFC;
+  margin-bottom: -3px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .addnewmathod {
+  border: 1px solid #b4b4b4;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .addnewmathod button {
+  padding: 15px 30px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #1b1b1b;
+  font-weight: 400;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .addnewmathod button .plusicon {
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #408BFC;
+  margin-bottom: -3px;
 }

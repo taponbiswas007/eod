@@ -173,6 +173,10 @@ $(document).ready(function () {
         $(".bypayment-area").hide(); // Optionally hide the list after selection
         $(this).closest('.mathod-item').find('.arrowrighticon').removeClass('rotated').css('transform', 'rotate(0deg)');
     });
+
+    $(".select-bank-card").click(function(){
+        $(".card-details").slideToggle();
+    });
 });
 
 function formatDate(dateString) {
