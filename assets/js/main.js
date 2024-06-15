@@ -21,6 +21,9 @@ $(document).ready(function(){
     $(".filter-item-checkbox").click(function(){
         $(this).find(".checked").toggle();
     });
+    $(".filterbtn").click(function(){
+        $(".filter-popup").slideToggle();
+    });
      // Show the select-item-area when the input field is focused
      $('.salespersonname-area input').focus(function() {
         $('.select-item-area').show();

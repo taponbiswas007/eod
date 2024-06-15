@@ -289,6 +289,28 @@ img {
   line-height: 17px;
   text-align: right;
 }
+.rental-item-wrapper .rental-item-main-area .rental-item-sub-header .right button {
+  background: #ffffff;
+  padding: 7px 20px;
+  color: #3B236D;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  border-radius: 7px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  border: 1px solid #3B236D;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.rental-item-wrapper .rental-item-main-area .rental-item-sub-header .right button:hover {
+  background: #3B236D;
+  color: #ffffff;
+}
 .rental-item-wrapper .rental-item-main-area .filter-area {
   background: #ffffff;
   padding: 20px 10px 20px 15px;
@@ -585,14 +607,34 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  .rental-item-wrapper .rental-item-main-area .rental-item-sub-header {
+    position: relative;
+  }
   .rental-item-wrapper .rental-item-main-area .rental-item-sub-header .numberofitem {
-    width: 50% !important;
+    z-index: 1;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+  }
+  .rental-item-wrapper .rental-item-main-area .rental-item-sub-header .numberofitem button {
+    display: block !important;
+  }
+  .rental-item-wrapper .rental-item-main-area .rental-item-sub-header .numberofitem p {
+    margin-top: 5px;
   }
   .rental-item-wrapper .rental-item-main-area .rental-category .item .item-name h1 {
     font-size: 16px;
   }
   .rental-item-wrapper .rental-item-main-area .rental-category .search-results-item {
-    width: 100%;
+    width: 48%;
+  }
+  .rental-item-wrapper .rental-item-main-area .filter-popup {
+    display: none;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -610,6 +652,9 @@ img {
   }
   .rental-item-wrapper .rental-item-main-area .rental-category .item .item-name h1 {
     font-size: 25px;
+  }
+  .rental-item-wrapper .rental-item-main-area .rental-category .search-results-item {
+    width: 100%;
   }
 }
 @media screen and (max-width: 440px) {
@@ -1152,4 +1197,4 @@ img {
   .bill-wrapper .bill-area .bill-header .header-item {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=styles.css.map */

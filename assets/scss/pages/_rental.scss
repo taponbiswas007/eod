@@ -224,6 +224,27 @@
                     line-height: 17px;
                     text-align: right;
                 }
+                button{
+                    background: $white;
+                    padding: 7px 20px;
+                    color: $maincolor;
+                    position: absolute;
+                    top: -35px;
+                    right: 0;
+                    border-radius: 7px;
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 500;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    display: none;
+                    border: 1px solid $maincolor;
+                    transition: .5s ease;
+                    &:hover{
+                        background: $maincolor;
+                        color: $white;
+                    }
+                    
+                }
             }
         }
 
@@ -549,9 +570,21 @@
 @media screen and (max-width: 768px) {
     .rental-item-wrapper {
         .rental-item-main-area {
+           
             .rental-item-sub-header{
+                position: relative;
                 .numberofitem{
-                    width: 50% !important;
+                   z-index: 1;
+                   width: fit-content;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 0px;
+                    button{
+                        display: block !important;
+                    }
+                    p{
+                        margin-top: 5px;
+                    }
                 }
             }
             .rental-category {
@@ -563,8 +596,13 @@
                     }
                 }
                 .search-results-item {
-                    width: 100%;
+                    width: 48%;
                 }
+            }
+            .filter-popup{
+               display: none;
+                padding-left: 0 !important;
+               padding-right: 0 !important;
             }
         }
     }
@@ -595,6 +633,9 @@
                         }
                     }
 
+                }
+                .search-results-item {
+                    width: 100%;
                 }
 
             }
