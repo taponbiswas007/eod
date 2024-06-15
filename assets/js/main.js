@@ -18,6 +18,11 @@ $(document).ready(function () {
             window.location.href = 'rental-item-search-results.html';
         }, 1000);
     });
+    $(".buybtn").click(function () {
+
+        window.location.href = 'bill-page.html';
+
+    });
     $(".filter-item-checkbox").click(function () {
         $(this).find(".checked").toggle();
     });
@@ -141,6 +146,32 @@ $(document).ready(function () {
         var newItem = $(this).text().trim(); // Get the text of the clicked li
         $(this).closest('.bill-item-name').find('h1').text(newItem); // Update h1 text
         $(this)('.select-item-name').hide(); // Hide the .select-item-name container
+    });
+
+
+    //check out page area
+    $('.mathod-item').click(function() {
+        var $this = $(this);
+        var $icon = $this.find('.arrowrighticon');
+        var $paymentArea = $this.find('.bypayment-area');
+        
+        // Toggle the payment area
+        $paymentArea.toggle();
+        
+        // Toggle the rotation of the icon
+        if ($icon.hasClass('rotated')) {
+            $icon.removeClass('rotated').css('transform', 'rotate(0deg)');
+        } else {
+            $icon.addClass('rotated').css('transform', 'rotate(90deg)');
+        }
+    });
+
+    $('.bypayment-area li').click(function(event) {
+        event.stopPropagation(); // Prevent triggering the parent div's click event
+        var $liValue = $(this).text();
+        $(this).closest('.mathod-item').find('h2').text($liValue);
+        $(".bypayment-area").hide(); // Optionally hide the list after selection
+        $(this).closest('.mathod-item').find('.arrowrighticon').removeClass('rotated').css('transform', 'rotate(0deg)');
     });
 });
 

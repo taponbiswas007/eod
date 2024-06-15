@@ -1428,4 +1428,152 @@ img {
   .bill-wrapper .bill-area .bill-header .header-item {
     width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+.checkout-full-wrapper .checkout-main-area {
+  background: #F6F6F6;
+  padding: 74px 30px 60px 30px;
+}
+.checkout-full-wrapper .checkout-main-area .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checkout-full-wrapper .checkout-main-area .header h1 {
+  font-family: "Toran";
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+  color: #3B236D;
+}
+.checkout-full-wrapper .checkout-main-area .header h1::after {
+  content: "";
+  height: 1px;
+  background: #3B236D;
+  bottom: -5px;
+  left: 30px;
+  right: 30px;
+  position: absolute;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area {
+  background: #ffffff;
+  padding: 35px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area h1 {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #3B236D;
+  margin-bottom: 30px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .mathod-item {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #1b1b1b;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  height: 40px;
+  border: 1px solid #b4b4b4;
+  width: 100%;
+  border-radius: 8px;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .mathod-item .bypayment-area {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #1b1b1b;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  border: 1px solid #b4b4b4;
+  width: 100%;
+  border-radius: 8px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  display: none;
+  z-index: 1;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .mathod-item .bypayment-area ul {
+  width: 100%;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .mathod-item .bypayment-area ul li {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  background: #F6F6F6;
+  padding: 10px 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .mathod-item .bypayment-area ul li:hover {
+  background: #3B236D;
+  color: #ffffff;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details {
+  border: 1px solid #b4b4b4;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #1b1b1b;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details .card-item {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #1b1b1b;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  height: 40px;
+  border: 1px solid #b4b4b4;
+  width: 100%;
+  border-radius: 8px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .card-details .card-item img {
+  width: 34px;
+}
