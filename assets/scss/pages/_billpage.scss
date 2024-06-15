@@ -21,19 +21,22 @@
 }
 
 .contact-area {
-    background: $white;
-    border-radius: 10px;
+   
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 25px;
+   
     max-width: 500px;
     width: 100%;
-    margin: 0 10px;
+   
 
 
     .login-inner-area {
+        background: $white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 25px;
         h1 {
             font-size: 23px;
             font-weight: 600;
@@ -141,16 +144,27 @@
                 }
             }
 
-            .create-new-button-area {
-                button {
-                    background: $white;
-                    border: 1px solid #D3D3D3;
-                    color: $black;
-                    box-shadow: 0px 2.05px 2.73px 0px rgba(0, 0, 0, 0.42);
+           
 
-                }
+        }
+        .create-new-button-area {
+            button {
+                background: $white;
+                border: 1px solid #D3D3D3;
+                color: $black;
+                box-shadow: 0px 2.05px 2.73px 0px rgba(0, 0, 0, 0.42);
+                width: 100%;
+                padding: 15px 0;
+                border-radius: 7px;
+                font-size: 16px;
+                font-family: $inter;
+                font-weight: 400;
+                text-align: center;
+                text-transform: capitalize;
+                margin-top: 20px;
+                transition: .3s;
+
             }
-
         }
     }
 }

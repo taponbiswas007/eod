@@ -36,6 +36,17 @@ $(document).ready(function () {
         $("#registerArea").fadeIn();
         $("#loginArea").fadeOut();
     });
+    $("#signinnow").click(function () {
+
+        $("#registerArea").fadeOut();
+        $("#loginArea").fadeIn();
+    });
+    $(".overly").click(function () {
+
+        $("#registerArea").fadeOut();
+        $("#loginArea").fadeOut();
+        $(this).fadeOut();
+    });
     // Show the select-item-area when the input field is focused
     $('.salespersonname-area input').focus(function () {
         $('.select-item-area').show();
