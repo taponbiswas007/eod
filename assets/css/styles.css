@@ -1429,6 +1429,9 @@ img {
     width: 100%;
   }
 }
+.checkout-full-wrapper {
+  margin-top: 50px;
+}
 .checkout-full-wrapper .checkout-main-area {
   background: #F6F6F6;
   padding: 74px 30px 60px 30px;
@@ -1602,6 +1605,7 @@ img {
   margin-top: 20px;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .checkout-full-wrapper .checkout-main-area .payment-details-area .addnewmathod button {
   padding: 15px 30px;
@@ -1704,4 +1708,41 @@ img {
 }
 .checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area .total-price-area span:last-child {
   color: #696969;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .paynow-button-area {
+  margin-top: 30px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .paynow-button-area button {
+  width: 100%;
+  background: #3B236D;
+  font-size: 19px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .checkout-full-wrapper .checkout-main-area {
+    background: #F6F6F6;
+    padding: 74px 10px 60px 10px;
+  }
+  .checkout-full-wrapper .checkout-main-area .payment-details-area {
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .checkout-full-wrapper .checkout-main-area {
+    background: #F6F6F6;
+    padding: 74px 10px 60px 10px;
+  }
+  .checkout-full-wrapper .checkout-main-area .payment-details-area {
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
