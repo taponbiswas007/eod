@@ -23,6 +23,7 @@
             flex-wrap: wrap;
             row-gap: 20px;
             margin-bottom: 30px;
+
             .header-item {
                 width: 24%;
 
@@ -90,10 +91,11 @@
                             padding: 20px;
                             border-radius: 8px;
                             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                           
+
                             z-index: 1;
-                            ul{
-                                li{
+
+                            ul {
+                                li {
                                     font-family: $inter;
                                     color: $black;
                                     font-size: 16px;
@@ -138,34 +140,45 @@
                 }
             }
         }
+
         .allcategoryarea {
-            h1{
-                font-size: 25px;
-                font-family: $roboto;
-                font-weight: 600;
-                color: $maincolor;
-                line-height: 31px;
-                margin-top: 40px;
-                text-transform: capitalize;
-                
-            }
-            .select-category-button{
-                background: $maincolor;
-                padding: 7px 10px;
-                color: $white;
-                border-radius: 6px;
-                text-transform: capitalize;
-                transition: .5s;
-                display: none;
-                &:hover{
-                    background: #e006ce;
+            .categaoryselect-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h1 {
+                    font-size: 25px;
+                    font-family: $roboto;
+                    font-weight: 600;
+                    color: $maincolor;
+                    line-height: 31px;
+                    margin-top: 40px;
+                    text-transform: capitalize;
+
+                }
+
+                .select-category-button {
+                    background: $maincolor;
+                    padding: 7px 10px;
+                    color: $white;
+                    border-radius: 6px;
+                    text-transform: capitalize;
+                    transition: .5s;
+                    display: none;
+
+                    &:hover {
+                        background: #e006ce;
+                    }
                 }
             }
-            .category-select-item{
-                margin-top: 30px;
+
+            .category-select-item {
+                margin-top: 64px;
                 border: 2px solid #D5D5D5;
                 padding: 20px 10px;
-                h1{
+
+                h1 {
                     font-family: $roboto;
                     color: #424242;
                     font-weight: 700;
@@ -175,13 +188,15 @@
                     margin-left: 30px;
                     margin-bottom: 30px;
                 }
-                .category-items{
+
+                .category-items {
                     background: $white;
                     height: 30px;
                     padding-left: 30px;
                     cursor: pointer;
                     margin-bottom: 10px;
-                    h1{
+
+                    h1 {
                         font-family: $arial;
                         font-size: 12px;
                         color: #424242;
@@ -189,20 +204,25 @@
                         text-transform: uppercase;
                         margin-top: 0;
                         margin-bottom: 0;
-                        .checkthisitem{
+
+                        .checkthisitem {
                             display: none;
                         }
                     }
                 }
             }
         }
-        .eventtimetable{
+
+        .eventtimetable {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            .itemtableitem{
-                h1{
+            row-gap: 20px;
+            margin-top: 20px;
+
+            .itemtableitem {
+                h1 {
                     font-family: $inter;
                     color: #344054;
                     font-size: 15px;
@@ -210,7 +230,8 @@
                     text-transform: capitalize;
                     margin-bottom: 10px;
                 }
-                .settime{
+
+                .settime {
                     background: $white;
                     border-radius: 7px;
                     padding: 5px 20px;
@@ -223,298 +244,389 @@
                     align-items: center;
                     text-transform: uppercase;
                     column-gap: 15px;
-                    ul{
-                        li{
-                           margin-bottom: 4px;
-                           cursor: pointer;
-                           &:last-child{
-                            margin-bottom: 0;
-                        }
-                           &:nth-child(2){
-                            margin-left: -3px;
-                        }
+
+                    ul {
+                        li {
+                            margin-bottom: 4px;
+                            cursor: pointer;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            &:nth-child(2) {
+                                margin-left: -3px;
+                            }
                         }
                     }
-                    span{
+
+                    span {
                         cursor: pointer;
                     }
-                   
+
                 }
             }
         }
-        .main-bill{
+
+        .main-bill {
             margin-top: 30px;
-                border: 2px solid #D5D5D5;
-                padding: 20px 10px;
-                h1{
-                    font-family: $roboto;
-                    color: #424242;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    font-size: 14px; 
-                    margin-bottom: 30px;
+            border: 2px solid #D5D5D5;
+            padding: 20px 10px;
+
+            h1 {
+                font-family: $roboto;
+                color: #424242;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+
+            .bill-item-and-quantity-selector {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 10px;
+                margin-bottom: 10px;
+
+                .bill-item-names {
+                    width: 100%;
+                    position: relative;
                 }
-                .bill-item-and-quantity-selector{
+
+                .bill-item-name {
+                    background: $white;
+                    height: 35px;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    width: 100%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    column-gap: 10px;
-                    margin-bottom: 10px;
-                    .bill-item-names{
+                    position: relative;
+                    border: 1px solid #D5D5D5;
+
+                    h1 {
+                        font-family: $arial;
+                        font-size: 12px;
+                        color: #424242;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        margin-bottom: 0;
+
+                    }
+
+                    button {
+                        color: #667085;
+                    }
+
+                    .select-item-name {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
                         width: 100%;
-                        position: relative;
-                    }
-                    .bill-item-name{
+                        display: none;
                         background: $white;
-                        height: 35px;
-                        padding-left: 10px;
-                        cursor: pointer;
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        position: relative;
-                        border: 1px solid #D5D5D5;
-                        
-                        h1{
-                            font-family: $arial;
-                            font-size: 12px;
-                            color: #424242;
-                            font-weight: 400;
-                            text-transform: uppercase;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                           
-                        }
-                        button{
-                            color: #667085;
-                        }
-                        .select-item-name{
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            width: 100%;
-                            display: none;
-                            background: $white;
-                            padding: 20px;
-                            border-radius: 8px;
-                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                            z-index: 1;
-                            ul{
-                                li{
-                                    font-family: $inter;
-                                    color: $black;
-                                    font-size: 16px;
-                                    margin-bottom: 10px;
-                                    text-transform: capitalize;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-                    }
-                    .bill-item-quantity-header{
-                        width: 46px;
-                       
-                        height: 30px;
-                        span{
-                            color: #424242;
-                            font-family: $roboto;
-                            font-size: 13px;
-                            font-style: italic;
-                        }
-                    }
-                    .hair-days-header{
-                        width: 46px;
-                      
-                        height: 30px;
-                        span{
-                            color: #424242;
-                            font-family: $roboto;
-                            font-size: 13px;
-                            font-style: italic;
-                        }
-                    }
-                    .bill-item-quantity{
-                        width: 60px;
-                        background: $white;
-                        height: 35px;
-                        padding: 5px;
-                          border: 1px solid #D5D5D5;
-                        ul{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            li{
-                                display: inline-block;
-                                ul{
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    flex-direction: column;
-                                    li{
-                                        display: block;
-                                          color: #667085;
-                                        &:first-child{
-                                            margin-bottom: -8px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .hair-days{
-                        width: 60px;
-                        background: $white;
-                        height: 35px;
-                        padding: 5px;
-                          border: 1px solid #D5D5D5;
-                         ul{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            li{
-                                display: inline-block;
-                                ul{
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    flex-direction: column;
-                                    li{
-                                        display: block;
-                                        color: #667085;
-                                        &:first-child{
-                                            margin-bottom: -8px;
-                                        }
-                                    }
-                                }
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        z-index: 1;
+
+                        ul {
+                            li {
+                                font-family: $inter;
+                                color: $black;
+                                font-size: 16px;
+                                margin-bottom: 10px;
+                                text-transform: capitalize;
+                                cursor: pointer;
                             }
                         }
                     }
                 }
-                .total-item-counter{
+
+                .bill-item-quantity-header {
+                    width: 60px;
+
+                    span {
+                        color: #424242;
+                        font-family: $roboto;
+                        font-size: 13px;
+                        font-style: italic;
+                    }
+                }
+
+                .hair-days-header {
+                    width: 60px;
+
+                    span {
+                        color: #424242;
+                        font-family: $roboto;
+                        font-size: 13px;
+                        font-style: italic;
+                    }
+                }
+
+                .bill-item-quantity {
+                    width: 60px;
                     background: $white;
                     height: 35px;
+                    padding: 5px;
+                    border: 1px solid #D5D5D5;
+
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        li {
+                            display: inline-block;
+
+                            ul {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+
+                                li {
+                                    display: block;
+                                    color: #667085;
+
+                                    &:first-child {
+                                        margin-bottom: -8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hair-days {
+                    width: 60px;
+                    background: $white;
+                    height: 35px;
+                    padding: 5px;
+                    border: 1px solid #D5D5D5;
+
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        li {
+                            display: inline-block;
+
+                            ul {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+
+                                li {
+                                    display: block;
+                                    color: #667085;
+
+                                    &:first-child {
+                                        margin-bottom: -8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .total-item-counter {
+                background: $white;
+                height: 35px;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 30px;
+                margin-bottom: 10px;
+
+                span {
+                    font-size: 14px;
+                    font-family: $roboto;
+                    font-weight: 400;
+
+                    &:first-child {
+                        font-style: italic;
+                        color: #424242;
+                    }
+
+                    &:last-child {
+                        color: #E31E24;
+                    }
+                }
+            }
+
+            .get-quotation {
+                height: 35px;
+                margin-top: 20px;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    background: $maincolor;
+                    color: $white;
+                    text-align: center;
+                    font-family: $roboto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+
+            .final-price-showing-area {
+                .price-header {
                     display: flex;
                     justify-content: space-between;
-                    padding: 10px 30px;
-                    span{
-                        font-size: 14px;
-                        font-family: $roboto;
-                        font-weight: 400;
-                        &:first-child{
+                    align-items: center;
+                    margin-bottom: 46px;
+
+                    .left {
+                        h1 {
+                            font-family: $roboto;
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: #424242;
+                            text-transform: uppercase;
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            font-family: $roboto;
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #424242;
                             font-style: italic;
-                            color: #424242;
                         }
-                        &:last-child{
-                            color: #E31E24;
-                        }
+                    }
+
+                    .right {
+                        font-size: 28px;
+                        color: #424242;
+                        text-align: right;
                     }
                 }
-                .final-price-showing-area{
-                    .price-header{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-bottom: 46px;
-                        .left{
-                            h1{
-                                font-family: $roboto;
-                                font-weight: 700;
-                                font-size: 14px;
-                                color: #424242;
-                                text-transform: uppercase;
-                                margin-bottom: 10px;
-                            }
-                            p{
-                                font-family: $roboto;
-                                font-weight: 500;
-                                font-size: 14px;
-                                color: #424242;
-                                font-style: italic;
-                            }
-                        }
-                        .right{
-                            font-size: 28px;
-                            color: #424242;
-                            text-align: right;
-                        }
-                    }
-                    .final-price-with-quantity{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        background: $white;
-                        height: 35px;
-                        padding: 0 15px;
-                        margin-bottom: 10px;
-                        .left{
-                            ul{
-                                li{
-                                    display: inline-block;
-                                    font-family: $inter;
-                                    font-size: 12px;
-                                    font-weight: 400;
-                                    &:first-child{
-                                        color: $maincolor;
-                                        margin-right: 15px;
-                                    }
-                                    &:last-child{
-                                        color: $black;
-                                    }
+
+                .final-price-with-quantity {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: $white;
+                    height: 35px;
+                    padding: 0 15px;
+                    margin-bottom: 10px;
+
+                    .left {
+                        ul {
+                            li {
+                                display: inline-block;
+                                font-family: $inter;
+                                font-size: 12px;
+                                font-weight: 400;
+
+                                &:first-child {
+                                    color: $maincolor;
+                                    margin-right: 15px;
+                                }
+
+                                &:last-child {
+                                    color: $black;
                                 }
                             }
                         }
-                        .right{
-                            ul{
-                                li{
-                                    display: inline-block;
-                                    font-family: $inter;
-                                    font-size: 12px;
-                                    font-weight: 400;
-                                    &:first-child{
-                                        color: $maincolor;
-                                        margin-right: 15px;
-                                    }
-                                    &:last-child{
-                                        color: #E31E24;
-                                    }
+                    }
+
+                    .right {
+                        ul {
+                            li {
+                                display: inline-block;
+                                font-family: $inter;
+                                font-size: 12px;
+                                font-weight: 400;
+
+                                &:first-child {
+                                    color: $maincolor;
+                                    margin-right: 15px;
+                                }
+
+                                &:last-child {
+                                    color: #E31E24;
                                 }
                             }
                         }
                     }
                 }
+            }
         }
     }
 
 }
+
 @media screen and (max-width: 992px) {
-    .bill-wrapper{
-       .bill-area{
-        .bill-header{
-            .header-item{
-                width: 48%;
+    .bill-wrapper {
+        .bill-area {
+            padding-left: 15px;
+
+            .bill-header {
+                .header-item {
+                    width: 48%;
+                }
+            }
+
+            .allcategoryarea {
+
+                .categaoryselect-header {
+                    padding: 30px 0;
+
+                    h1 {
+                        margin-top: 0;
+                    }
+
+                    .select-category-button {
+                        display: block;
+                    }
+                }
+
+                .category-select-item {
+                    margin-top: 20px;
+                    display: none;
+
+                    .category-items {
+                        display: flex;
+                        align-items: center;
+
+                        h1 {
+                            margin-left: 0 !important;
+                        }
+                    }
+                }
             }
         }
-       } 
     }
 }
+
 @media screen and (max-width: 768px) {
-  .header-wrapper{
-    .navbar{
-        h1{
-            font-size: 15px;
-        }
-    }
-  }
-}
-@media screen and (max-width: 576px) {
-    .bill-wrapper{
-       .bill-area{
-        .bill-header{
-            .header-item{
-                width: 100%;
+    .header-wrapper {
+        .navbar {
+            h1 {
+                font-size: 15px;
             }
         }
-       } 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .bill-wrapper {
+        .bill-area {
+            .bill-header {
+                .header-item {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

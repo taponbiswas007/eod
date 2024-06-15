@@ -24,6 +24,12 @@ $(document).ready(function(){
     $(".filterbtn").click(function(){
         $(".filter-popup").slideToggle();
     });
+    $(".select-category-button").click(function(){
+        $(".category-select-item").slideToggle();
+    });
+    $(".getqtnbtn").click(function(){
+        $(".category-select-item").slideToggle();
+    });
      // Show the select-item-area when the input field is focused
      $('.salespersonname-area input').focus(function() {
         $('.select-item-area').show();
