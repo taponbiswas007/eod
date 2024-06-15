@@ -1,63 +1,69 @@
-$(document).ready(function(){
-    $(".togglebar").click(function(){
+$(document).ready(function () {
+    $(".togglebar").click(function () {
         $(".bars ,.close").toggle();
     });
-    $(".bars").click(function(){
+    $(".bars").click(function () {
         $(".right nav").animate({
-            "left":"0"
-        },500);
+            "left": "0"
+        }, 500);
     });
-    $(".close").click(function(){
+    $(".close").click(function () {
         $(".right nav").animate({
-            "left":"-200%"
-        },500);
+            "left": "-200%"
+        }, 500);
     });
-    $(".item").click(function(){
+    $(".item").click(function () {
         $(this).find(".checkmark").toggle();
-        setTimeout(function(){
+        setTimeout(function () {
             window.location.href = 'rental-item-search-results.html';
         }, 1000);
     });
-    $(".filter-item-checkbox").click(function(){
+    $(".filter-item-checkbox").click(function () {
         $(this).find(".checked").toggle();
     });
-    $(".filterbtn").click(function(){
+    $(".filterbtn").click(function () {
         $(".filter-popup").slideToggle();
     });
-    $(".select-category-button").click(function(){
+    $(".select-category-button").click(function () {
         $(".category-select-item").slideToggle();
     });
-    $(".getqtnbtn").click(function(){
-        $(".category-select-item").slideToggle();
+    $(".getqtnbtn").click(function () {
+        $(".overly").fadeIn();
+        $("#loginArea").fadeIn();
     });
-     // Show the select-item-area when the input field is focused
-     $('.salespersonname-area input').focus(function() {
+    $("#registerbtn").click(function () {
+
+        $("#registerArea").fadeIn();
+        $("#loginArea").fadeOut();
+    });
+    // Show the select-item-area when the input field is focused
+    $('.salespersonname-area input').focus(function () {
         $('.select-item-area').show();
     });
 
     // Hide the select-item-area when clicking outside
-    $(document).click(function(event) {
+    $(document).click(function (event) {
         if (!$(event.target).closest('.salespersonname-area').length) {
             $('.select-item-area').hide();
         }
     });
 
     // Set the clicked li value to the input field and hide the select-item-area
-    $('.select-item-area li').click(function() {
+    $('.select-item-area li').click(function () {
         var selectedValue = $(this).text();
         $('.salespersonname-area input').val(selectedValue);
         $('.select-item-area').hide();
     });
 
     // Toggle the select-item-area when clicking the angle down icon
-    $('.anglearrow').click(function() {
+    $('.anglearrow').click(function () {
         $('.select-item-area').toggle();
     });
 
     var maxCount = 12;
 
     // Increase button click event
-    $('.counter .increase').click(function() {
+    $('.counter .increase').click(function () {
         var $counter = $(this).closest('.counter');
         var $countElement = $counter.find('.count');
         var count = parseInt($countElement.text());
@@ -67,18 +73,18 @@ $(document).ready(function(){
     });
 
     // Decrease button click event
-    $('.counter .decrease').click(function() {
+    $('.counter .decrease').click(function () {
         var $counter = $(this).closest('.counter');
         var $countElement = $counter.find('.count');
         var count = parseInt($countElement.text());
-        if (count > 0) {  // Optional: prevent negative counts
+        if (count > 0) { // Optional: prevent negative counts
             $countElement.text(count - 1);
         }
     });
     var maxCountminute = 60;
 
     // Increase button click event
-    $('.counter2 .increase2').click(function() {
+    $('.counter2 .increase2').click(function () {
         var $counter = $(this).closest('.counter2');
         var $countElement = $counter.find('.count2');
         var count = parseInt($countElement.text());
@@ -88,22 +94,22 @@ $(document).ready(function(){
     });
 
     // Decrease button click event
-    $('.counter2 .decrease2').click(function() {
+    $('.counter2 .decrease2').click(function () {
         var $counter = $(this).closest('.counter2');
         var $countElement = $counter.find('.count2');
         var count = parseInt($countElement.text());
-        if (count > 0) {  // Optional: prevent negative counts
+        if (count > 0) { // Optional: prevent negative counts
             $countElement.text(count - 1);
         }
     });
 
-    $('.time-toggle').click(function() {
+    $('.time-toggle').click(function () {
         var currentText = $(this).text();
         $(this).text(currentText === 'am' ? 'pm' : 'am');
-      });
-   
+    });
 
-      $(".category-items").click(function(){
+
+    $(".category-items").click(function () {
         $(this).find(".checkthisitem").toggle();
         var categoryName = $(this).find(".category-name");
         if (categoryName.css("color") === "rgb(59, 35, 109)") {
@@ -113,19 +119,20 @@ $(document).ready(function(){
         }
     });
 
-    
-       // Toggle .select-item-name visibility on .bill-item-name click
-       $('.bill-item-name').on('click', function() {
+
+    // Toggle .select-item-name visibility on .bill-item-name click
+    $('.bill-item-name').on('click', function () {
         $(this).find('.select-item-name').toggle();
     });
 
     // Update h1 text and hide .select-item-name on li click
-    $('.select-item-name li').on('click', function() {
+    $('.select-item-name li').on('click', function () {
         var newItem = $(this).text().trim(); // Get the text of the clicked li
         $(this).closest('.bill-item-name').find('h1').text(newItem); // Update h1 text
         $(this)('.select-item-name').hide(); // Hide the .select-item-name container
     });
 });
+
 function formatDate(dateString) {
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var date = new Date(dateString);
