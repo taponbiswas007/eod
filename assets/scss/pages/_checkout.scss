@@ -84,6 +84,7 @@
                         text-transform: capitalize;
                         margin-top: 10px;
                         display: none;
+                        background: $white;
                         z-index: 1;
 
                         ul {
@@ -188,6 +189,74 @@
                         margin-bottom: -3px;
                     }
                 }
+            }
+
+            .payment-details{
+                border: 1px solid #b4b4b4;
+                padding: 10px;
+                h5{
+                    font-size: 16px;
+                    font-family: $inter;
+                    font-weight: 600;
+                    color: #696969;
+                    position: relative;
+                    margin-bottom: 40px;
+                    &::after{
+                        content: ' ';
+                        height: 1px;
+                        width: 100%;
+                        background: #696969;
+                        bottom: -7px;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
+                .item-wise-price-area{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    ul{
+                        width: 100%;
+                        li{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            height: 50px;
+                            border-bottom: 1px solid #E7E9EB;
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                            span{
+                                font-family: $inter;
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #696969;
+                            }
+                        }
+                    }
+                    .total-price-area{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        border-top: 1px solid #696969;
+                        padding-top: 10px;
+                        padding-bottom: 20px;
+                        margin-top: 40px;
+                        span{
+                            font-family: $inter;
+                            font-weight: 700;
+                            font-size: 19px;
+                            color:#FF3939 ;
+                            &:last-child{
+                                color: #696969;
+                            }
+                        }
+                    }
+                }
+               
             }
         }
     }

@@ -1522,6 +1522,7 @@ img {
   text-transform: capitalize;
   margin-top: 10px;
   display: none;
+  background: #ffffff;
   z-index: 1;
 }
 .checkout-full-wrapper .checkout-main-area .payment-details-area .add-payment-mathod .mathod-item .bypayment-area ul {
@@ -1616,4 +1617,91 @@ img {
   margin-right: 10px;
   color: #408BFC;
   margin-bottom: -3px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details {
+  border: 1px solid #b4b4b4;
+  padding: 10px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details h5 {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #696969;
+  position: relative;
+  margin-bottom: 40px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details h5::after {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  background: #696969;
+  bottom: -7px;
+  left: 0;
+  position: absolute;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area ul {
+  width: 100%;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #E7E9EB;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area ul li:last-child {
+  border-bottom: none;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area ul li span {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #696969;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area .total-price-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-top: 1px solid #696969;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area .total-price-area span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: #FF3939;
+}
+.checkout-full-wrapper .checkout-main-area .payment-details-area .payment-details .item-wise-price-area .total-price-area span:last-child {
+  color: #696969;
 }
