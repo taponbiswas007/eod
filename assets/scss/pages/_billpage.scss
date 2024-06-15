@@ -146,6 +146,20 @@
                 color: $maincolor;
                 line-height: 31px;
                 margin-top: 40px;
+                text-transform: capitalize;
+                
+            }
+            .select-category-button{
+                background: $maincolor;
+                padding: 7px 10px;
+                color: $white;
+                border-radius: 6px;
+                text-transform: capitalize;
+                transition: .5s;
+                display: none;
+                &:hover{
+                    background: #e006ce;
+                }
             }
             .category-select-item{
                 margin-top: 30px;
@@ -186,6 +200,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             .itemtableitem{
                 h1{
                     font-family: $inter;
