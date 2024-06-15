@@ -244,13 +244,14 @@
                     justify-content: space-between;
                     align-items: center;
                     column-gap: 10px;
+                    margin-bottom: 10px;
                     .bill-item-names{
                         width: 100%;
                         position: relative;
                     }
                     .bill-item-name{
                         background: $white;
-                        height: 30px;
+                        height: 35px;
                         padding-left: 10px;
                         cursor: pointer;
                         width: 100%;
@@ -258,6 +259,7 @@
                         justify-content: space-between;
                         align-items: center;
                         position: relative;
+                        border: 1px solid #D5D5D5;
                         
                         h1{
                             font-family: $arial;
@@ -318,16 +320,152 @@
                         }
                     }
                     .bill-item-quantity{
-                        width: 46px;
+                        width: 60px;
                         background: $white;
-                        height: 30px;
-                     
+                        height: 35px;
+                        padding: 5px;
+                          border: 1px solid #D5D5D5;
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            li{
+                                display: inline-block;
+                                ul{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    li{
+                                        display: block;
+                                          color: #667085;
+                                        &:first-child{
+                                            margin-bottom: -8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                     .hair-days{
-                        width: 46px;
+                        width: 60px;
                         background: $white;
-                        height: 30px;
-                        
+                        height: 35px;
+                        padding: 5px;
+                          border: 1px solid #D5D5D5;
+                         ul{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            li{
+                                display: inline-block;
+                                ul{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    li{
+                                        display: block;
+                                        color: #667085;
+                                        &:first-child{
+                                            margin-bottom: -8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .total-item-counter{
+                    background: $white;
+                    height: 35px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 30px;
+                    span{
+                        font-size: 14px;
+                        font-family: $roboto;
+                        font-weight: 400;
+                        &:first-child{
+                            font-style: italic;
+                            color: #424242;
+                        }
+                        &:last-child{
+                            color: #E31E24;
+                        }
+                    }
+                }
+                .final-price-showing-area{
+                    .price-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 46px;
+                        .left{
+                            h1{
+                                font-family: $roboto;
+                                font-weight: 700;
+                                font-size: 14px;
+                                color: #424242;
+                                text-transform: uppercase;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                font-family: $roboto;
+                                font-weight: 500;
+                                font-size: 14px;
+                                color: #424242;
+                                font-style: italic;
+                            }
+                        }
+                        .right{
+                            font-size: 28px;
+                            color: #424242;
+                            text-align: right;
+                        }
+                    }
+                    .final-price-with-quantity{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background: $white;
+                        height: 35px;
+                        padding: 0 15px;
+                        margin-bottom: 10px;
+                        .left{
+                            ul{
+                                li{
+                                    display: inline-block;
+                                    font-family: $inter;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    &:first-child{
+                                        color: $maincolor;
+                                        margin-right: 15px;
+                                    }
+                                    &:last-child{
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                        .right{
+                            ul{
+                                li{
+                                    display: inline-block;
+                                    font-family: $inter;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    &:first-child{
+                                        color: $maincolor;
+                                        margin-right: 15px;
+                                    }
+                                    &:last-child{
+                                        color: #E31E24;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
         }

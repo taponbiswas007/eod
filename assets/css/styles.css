@@ -878,6 +878,7 @@ img {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  margin-bottom: 10px;
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-names {
   width: 100%;
@@ -885,7 +886,7 @@ img {
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name {
   background: #ffffff;
-  height: 30px;
+  height: 35px;
   padding-left: 10px;
   cursor: pointer;
   width: 100%;
@@ -899,6 +900,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  border: 1px solid #D5D5D5;
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-name h1 {
   font-family: "Arial";
@@ -954,14 +956,186 @@ img {
   font-style: italic;
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity {
-  width: 46px;
+  width: 60px;
   background: #ffffff;
-  height: 30px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #D5D5D5;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity ul li {
+  display: inline-block;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity ul li ul li {
+  display: block;
+  color: #667085;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .bill-item-quantity ul li ul li:first-child {
+  margin-bottom: -8px;
 }
 .bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days {
-  width: 46px;
+  width: 60px;
   background: #ffffff;
-  height: 30px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #D5D5D5;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days ul li {
+  display: inline-block;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days ul li ul li {
+  display: block;
+  color: #667085;
+}
+.bill-wrapper .bill-area .main-bill .bill-item-and-quantity-selector .hair-days ul li ul li:first-child {
+  margin-bottom: -8px;
+}
+.bill-wrapper .bill-area .main-bill .total-item-counter {
+  background: #ffffff;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 30px;
+}
+.bill-wrapper .bill-area .main-bill .total-item-counter span {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.bill-wrapper .bill-area .main-bill .total-item-counter span:first-child {
+  font-style: italic;
+  color: #424242;
+}
+.bill-wrapper .bill-area .main-bill .total-item-counter span:last-child {
+  color: #E31E24;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .price-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 46px;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .price-header .left h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #424242;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .price-header .left p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #424242;
+  font-style: italic;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .price-header .right {
+  font-size: 28px;
+  color: #424242;
+  text-align: right;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .final-price-with-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  height: 35px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .final-price-with-quantity .left ul li {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .final-price-with-quantity .left ul li:first-child {
+  color: #3B236D;
+  margin-right: 15px;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .final-price-with-quantity .left ul li:last-child {
+  color: #000000;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .final-price-with-quantity .right ul li {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .final-price-with-quantity .right ul li:first-child {
+  color: #3B236D;
+  margin-right: 15px;
+}
+.bill-wrapper .bill-area .main-bill .final-price-showing-area .final-price-with-quantity .right ul li:last-child {
+  color: #E31E24;
 }
 
 @media screen and (max-width: 992px) {
